@@ -4,6 +4,54 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Calculator</title>
+        <style>
+            body {
+                background: #f4f4f4;
+                font-family: Arial, sans-serif;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                min-height: 100vh;
+                margin: 0;
+            }
+            h1 {
+                color: #333;
+                margin-bottom: 20px;
+            }
+            #calculator {
+                background: #fff;
+                padding: 30px 25px;
+                border-radius: 10px;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                min-width: 300px;
+            }
+            #calculator input, #calculator select, #calculator button {
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                font-size: 1rem;
+            }
+            #calculator button {
+                background: #007bff;
+                color: #fff;
+                border: none;
+                cursor: pointer;
+                transition: background 0.2s;
+            }
+            #calculator button:hover {
+                background: #0056b3;
+            }
+            #result {
+                margin-top: 20px;
+                font-size: 1.2rem;
+                color: #007bff;
+                min-height: 1.5em;
+            }
+        </style>
     </head>
     <body>
         <h1>Simple Calculator</h1>
